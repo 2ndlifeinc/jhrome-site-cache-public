@@ -1,1 +1,507 @@
-[]
+[
+  {
+    "boundAt": "2026-10-08T15:08:42.878Z",
+    "confirmedRuns": 1,
+    "expect": {
+      "filled": true
+    },
+    "fingerprint": "- link \"Proton\"\n- button \"English\"\n- button\n- textbox\n- textbox \"Email or username\"\n- textbox \"Password\"\n- button \"Reveal password\"\n- checkbox \"Keep me signed in\"\n- link \"Why?\"\n- button \"Sign in\"\n- link \"Create account\"\n- button \"Trouble signing in?\"\n- link \"Terms\"\n- link \"Privacy policy\"\n- button \"Get help from Lumo\"",
+    "id": "8145a07e-c048-44f4-96dc-e88c3455612c",
+    "intent": "Password",
+    "kind": "act",
+    "method": "fill",
+    "origin": "replay",
+    "playwrightCoreVersion": "1.59.1",
+    "target": {
+      "selectors": [
+        "internal:role=textbox[name=\"Password\"i]",
+        "internal:label=\"Password\"i"
+      ]
+    },
+    "urlPattern": "account.proton.me/login"
+  },
+  {
+    "boundAt": "2026-10-08T15:08:49.513Z",
+    "confirmedRuns": 1,
+    "expect": {
+      "gone": true,
+      "rendered": [
+        "- button \"Signing in Loading\" [disabled]"
+      ]
+    },
+    "fingerprint": "- link \"Proton\"\n- button \"English\"\n- button\n- textbox\n- textbox \"Email or username\"\n- textbox \"Password\"\n- button \"Reveal password\"\n- checkbox \"Keep me signed in\"\n- link \"Why?\"\n- button \"Sign in\"\n- link \"Create account\"\n- button \"Trouble signing in?\"\n- link \"Terms\"\n- link \"Privacy policy\"\n- button \"Get help from Lumo\"",
+    "id": "c00d9bc0-c347-441f-8b9e-4f3500a3d77e",
+    "intent": "Sign in",
+    "kind": "act",
+    "method": "click",
+    "origin": "replay",
+    "playwrightCoreVersion": "1.59.1",
+    "target": {
+      "selectors": [
+        "internal:role=button[name=\"Sign in\"i]",
+        "internal:role=button >> nth=3"
+      ]
+    },
+    "urlPattern": "account.proton.me/login"
+  },
+  {
+    "id": "c4345554-3b85-46da-96b3-cc15995ecd4e",
+    "intent": "계정 비밀번호를 입력한다",
+    "urlPattern": "accounts.google.com/v3-signin-challenge-pwd",
+    "boundAt": "2026-10-06T10:19:33.660Z",
+    "fingerprint": "- textbox \"Enter your password\"\n- checkbox \"Show password\"\n- link \"Privacy Policy\"\n- link \"Terms of Service\"\n- button \"Next\"\n- button \"Try another way\"\n- combobox \"Change language English (United States)\"\n- link \"Open Google Account Help Center (external, opens in a new window)\"\n- link \"Privacy Policy (external, opens in a new window)\"\n- link \"Google Terms of Service (external, opens in a new window)\"",
+    "playwrightCoreVersion": "1.59.1",
+    "origin": "explore",
+    "confirmedRuns": 1,
+    "kind": "act",
+    "expect": {
+      "filled": true
+    },
+    "method": "fill",
+    "target": {
+      "selectors": [
+        "internal:role=textbox[name=\"Enter your password\"i]",
+        "internal:label=\"Enter your password\"i"
+      ]
+    }
+  },
+  {
+    "boundAt": "2026-10-06T18:00:46.895Z",
+    "confirmedRuns": 1,
+    "expect": {
+      "rendered": [
+        "- textbox \"Email address\" [disabled]",
+        "- button \"Continue\" [disabled]",
+        "- button [disabled] ×n"
+      ]
+    },
+    "fingerprint": "- form \"Pick a log in option\"\n  - textbox \"Email address\"\n  - button \"Continue\"\n  - link \"Sign up\"\n  - button ×n\n- link \"Terms of Use\"\n- link \"Privacy Policy\"\n- link \"data Codex receives\"",
+    "id": "5335d5ae-fea0-4133-ac36-e6a714f3c7b8",
+    "intent": "계속 버튼을 누른다",
+    "kind": "act",
+    "inputMethod": "playwright.Input.dispatchMouseEvent",
+    "method": "click",
+    "origin": "replay",
+    "playwrightCoreVersion": "1.59.1",
+    "target": {
+      "selectors": [
+        "internal:role=button[name=\"Continue\"s]",
+        "internal:role=button >> nth=0"
+      ]
+    },
+    "urlPattern": "auth.openai.com/log-in"
+  },
+  {
+    "boundAt": "2026-10-06T18:00:45.945Z",
+    "confirmedRuns": 1,
+    "expect": {
+      "filled": true
+    },
+    "fingerprint": "- form \"Pick a log in option\"\n  - textbox \"Email address\"\n  - button \"Continue\"\n  - link \"Sign up\"\n  - button ×n\n- link \"Terms of Use\"\n- link \"Privacy Policy\"\n- link \"data Codex receives\"",
+    "id": "05c421c6-491f-4798-a32d-a09b023bf935",
+    "intent": "이메일 주소 입력란에 계정 이메일을 적는다",
+    "kind": "act",
+    "inputMethod": "playwright.Input.dispatchKeyEvent",
+    "method": "fill",
+    "origin": "replay",
+    "playwrightCoreVersion": "1.59.1",
+    "target": {
+      "selectors": [
+        "internal:role=textbox[name=\"Email address\"i]",
+        "internal:attr=[placeholder=\"Email address\"i]"
+      ]
+    },
+    "urlPattern": "auth.openai.com/log-in"
+  },
+  {
+    "id": "ca96c862-636f-49d1-92b5-f7b470652616",
+    "intent": "Click the '로그인' button",
+    "urlPattern": "myspeed.skbroadband.com/mesu-biz-login.asp",
+    "boundAt": "2026-09-28T05:15:21.737Z",
+    "fingerprint": "- link \"본문 바로가기\"\n- link \"주메뉴 바로가기\"\n- link \"SK브로드밴드\"\n- link \"기업고객 속도측정\"\n- link \"개인\"\n- link \"기업\"\n- link \"사이트맵\"\n- link \"기업고객 속도측정\"\n- link \"기업고객 결과조회\"\n- link \"기업고객 로그아웃\"\n- textbox \"서비스 관리번호\"\n- button \"로그인\"\n- link \"회사소개\"\n- link \"이용약관\"\n- link \"개인정보처리방침\"\n- link \"이용자피해예방가이드\"\n- link \"사이트맵\"\n- link \"온라인 문의\"\n- link \"Family Site\"",
+    "playwrightCoreVersion": "1.59.1",
+    "origin": "explore",
+    "confirmedRuns": 1,
+    "kind": "act",
+    "expect": {
+      "gone": true,
+      "url": "^https://myspeed\\.skbroadband\\.com/errorpopup\\.asp"
+    },
+    "method": "click",
+    "target": {
+      "selectors": [
+        "internal:role=button[name=\"로그인\"i]",
+        "internal:role=button"
+      ]
+    }
+  },
+  {
+    "id": "2bf3cc2a-e900-43c9-96d4-d1c7e3fd45d2",
+    "intent": "Type the service management number into the '서비스 관리번호' textbox",
+    "urlPattern": "myspeed.skbroadband.com/mesu-biz-login.asp",
+    "boundAt": "2026-09-28T05:14:39.274Z",
+    "fingerprint": "- link \"본문 바로가기\"\n- link \"주메뉴 바로가기\"\n- link \"SK브로드밴드\"\n- link \"기업고객 속도측정\"\n- link \"개인\"\n- link \"기업\"\n- link \"사이트맵\"\n- link \"기업고객 속도측정\"\n- link \"기업고객 결과조회\"\n- link \"기업고객 로그아웃\"\n- textbox \"서비스 관리번호\"\n- button \"로그인\"\n- link \"회사소개\"\n- link \"이용약관\"\n- link \"개인정보처리방침\"\n- link \"이용자피해예방가이드\"\n- link \"사이트맵\"\n- link \"온라인 문의\"\n- link \"Family Site\"",
+    "playwrightCoreVersion": "1.59.1",
+    "origin": "explore",
+    "confirmedRuns": 2,
+    "kind": "act",
+    "expect": {
+      "filled": true
+    },
+    "method": "fill",
+    "target": {
+      "selectors": [
+        "internal:role=textbox[name=\"서비스 관리번호\"i]",
+        "#cno",
+        "internal:role=textbox"
+      ]
+    }
+  },
+  {
+    "id": "27ca6ddc-9b8c-4d38-95d3-176d2f1c260b",
+    "intent": "SKT 알뜰폰 통신사 버튼",
+    "urlPattern": "nice.checkplus.co.kr/cert-main-menu",
+    "boundAt": "2026-09-22T08:58:43.116Z",
+    "fingerprint": "- button \"닫기\"\n- button \"SKT\"\n- button \"KT\"\n- button \"LG U+\"\n- button \"SKT 알뜰폰\"\n- button \"KT 알뜰폰\"\n- button \"LG U+ 알뜰폰\"\n- button \"알뜰폰 사업자 확인\"\n- link \"설치하기\"\n- link \"이용약관\"\n- link \"개인정보처리방침\"\n- link \"도입문의\"",
+    "playwrightCoreVersion": "1.59.1",
+    "origin": "explore",
+    "confirmedRuns": 7,
+    "kind": "act",
+    "expect": {
+      "gone": true,
+      "url": "^https://nice\\.checkplus\\.co\\.kr/cert/mobileCert/method"
+    },
+    "method": "click",
+    "target": {
+      "selectors": [
+        "internal:role=button[name=\"SKT 알뜰폰\"i]",
+        "#telcomSM",
+        "internal:role=button >> nth=4"
+      ]
+    }
+  },
+  {
+    "id": "998878ca-6b53-4d99-a722-e5034883f2de",
+    "intent": "다음 버튼",
+    "urlPattern": "nice.checkplus.co.kr/cert-mobileCert-method",
+    "boundAt": "2026-09-22T09:00:51.431Z",
+    "fingerprint": "- button \"닫기\"\n- button \"PASS 인증 앱으로 간편하고 안전하게!\"\n- button \"QR코드 인증 QR코드 스캔으로 간편하게!\"\n- button \"문자(SMS) 인증 SMS 인증번호로 본인확인\"\n- checkbox \"본인확인 이용 동의(필수)\" [checked]\n- button \"약관상세보기\"\n- button \"다음\"\n- link \"이용약관\"\n- link \"개인정보처리방침\"\n- link \"도입문의\"",
+    "playwrightCoreVersion": "1.59.1",
+    "origin": "explore",
+    "confirmedRuns": 7,
+    "kind": "act",
+    "expect": {
+      "gone": true,
+      "url": "^https://nice\\.checkplus\\.co\\.kr/cert/mobileCert/sms/certification"
+    },
+    "method": "click",
+    "target": {
+      "selectors": [
+        "internal:role=button[name=\"다음\"i]",
+        "#btnMobileCertStart",
+        "internal:role=button >> nth=5"
+      ]
+    }
+  },
+  {
+    "id": "89d0099a-bd9e-4b1c-a310-5a9660227c8b",
+    "intent": "문자 SMS 인증 버튼",
+    "urlPattern": "nice.checkplus.co.kr/cert-mobileCert-method",
+    "boundAt": "2026-09-22T08:59:36.633Z",
+    "fingerprint": "- button \"닫기\"\n- button \"PASS 인증 앱으로 간편하고 안전하게!\"\n- button \"QR코드 인증 QR코드 스캔으로 간편하게!\"\n- button \"문자(SMS) 인증 SMS 인증번호로 본인확인\"\n- link \"이용약관\"\n- link \"개인정보처리방침\"\n- link \"도입문의\"",
+    "playwrightCoreVersion": "1.59.1",
+    "origin": "explore",
+    "confirmedRuns": 7,
+    "kind": "act",
+    "expect": {
+      "rendered": [
+        "- button \"약관상세보기\""
+      ]
+    },
+    "method": "click",
+    "target": {
+      "selectors": [
+        "internal:role=button[name=\"문자(SMS) 인증 SMS 인증번호로 본인확인\"i]",
+        "internal:label=\"문자(SMS) 인증\"i >> internal:role=button"
+      ]
+    }
+  },
+  {
+    "id": "92fb887a-46f3-4b85-a95e-bdb866e64671",
+    "intent": "본인확인 이용 동의 필수 체크박스",
+    "urlPattern": "nice.checkplus.co.kr/cert-mobileCert-method",
+    "boundAt": "2026-09-22T09:00:14.517Z",
+    "fingerprint": "- button \"닫기\"\n- button \"PASS 인증 앱으로 간편하고 안전하게!\"\n- button \"QR코드 인증 QR코드 스캔으로 간편하게!\"\n- button \"문자(SMS) 인증 SMS 인증번호로 본인확인\"\n- checkbox \"본인확인 이용 동의(필수)\"\n- button \"약관상세보기\"\n- link \"이용약관\"\n- link \"개인정보처리방침\"\n- link \"도입문의\"",
+    "playwrightCoreVersion": "1.59.1",
+    "origin": "explore",
+    "confirmedRuns": 7,
+    "kind": "act",
+    "expect": {
+      "rendered": [
+        "- checkbox \"본인확인 이용 동의(필수)\" [checked]",
+        "- button \"다음\""
+      ]
+    },
+    "method": "click",
+    "target": {
+      "selectors": [
+        "internal:role=checkbox[name=\"본인확인 이용 동의(필수)\"i]",
+        "internal:label=\"본인확인 이용 동의(필수)\"i"
+      ]
+    }
+  },
+  {
+    "id": "c795f1ac-dc4d-4083-be07-6f7f8d390e00",
+    "intent": "보안문자 입력란",
+    "urlPattern": "nice.checkplus.co.kr/cert-mobileCert-sms-certification",
+    "boundAt": "2026-09-22T09:05:22.421Z",
+    "fingerprint": "- button \"닫기\"\n- textbox \"이름\"\n- textbox \"생년월일 6자리\"\n- textbox \"주민등록번호 뒤 첫번째 자리\"\n- textbox \"휴대폰번호\"\n- button \"보안문자 새로고침\"\n- button \"보안문자 음성듣기\"\n- textbox \"보안문자 입력\"\n- link \"이용약관\"\n- link \"개인정보처리방침\"\n- link \"도입문의\"",
+    "playwrightCoreVersion": "1.59.1",
+    "origin": "explore",
+    "confirmedRuns": 1,
+    "kind": "act",
+    "expect": {
+      "filled": true
+    },
+    "method": "fill",
+    "target": {
+      "selectors": [
+        "internal:role=textbox[name=\"보안문자 입력\"i]",
+        "internal:attr=[placeholder=\"보안문자 입력\"i]"
+      ]
+    }
+  },
+  {
+    "id": "2c603e17-c8c6-4740-a1c7-fc7d39f0ee61",
+    "intent": "생년월일 6자리 입력란",
+    "urlPattern": "nice.checkplus.co.kr/cert-mobileCert-sms-certification",
+    "boundAt": "2026-09-22T09:03:12.613Z",
+    "fingerprint": "- button \"닫기\"\n- textbox \"이름\"\n- textbox \"생년월일 6자리\"\n- textbox \"주민등록번호 뒤 첫번째 자리\"\n- link \"이용약관\"\n- link \"개인정보처리방침\"\n- link \"도입문의\"",
+    "playwrightCoreVersion": "1.59.1",
+    "origin": "explore",
+    "confirmedRuns": 3,
+    "kind": "act",
+    "expect": {
+      "filled": true
+    },
+    "method": "fill",
+    "target": {
+      "selectors": [
+        "internal:role=textbox[name=\"생년월일 6자리\"i]",
+        "internal:attr=[placeholder=\"생년월일 6자리\"i]"
+      ]
+    }
+  },
+  {
+    "id": "58bac00f-12e7-4182-a686-810ab4c76c93",
+    "intent": "이름 입력란",
+    "urlPattern": "nice.checkplus.co.kr/cert-mobileCert-sms-certification",
+    "boundAt": "2026-09-22T09:01:19.487Z",
+    "fingerprint": "- button \"닫기\"\n- textbox \"이름\"\n- link \"이용약관\"\n- link \"개인정보처리방침\"\n- link \"도입문의\"",
+    "playwrightCoreVersion": "1.59.1",
+    "origin": "explore",
+    "confirmedRuns": 7,
+    "kind": "act",
+    "expect": {
+      "filled": true
+    },
+    "method": "fill",
+    "target": {
+      "selectors": [
+        "internal:role=textbox[name=\"이름\"i]",
+        "internal:attr=[placeholder=\"이름\"i]"
+      ]
+    }
+  },
+  {
+    "id": "1f0392e2-0cde-4b78-812f-e038c992f647",
+    "intent": "입력정보 확인 버튼",
+    "urlPattern": "nice.checkplus.co.kr/cert-mobileCert-sms-certification",
+    "boundAt": "2026-09-22T09:06:00.999Z",
+    "fingerprint": "- button \"닫기\"\n- textbox \"이름\"\n- textbox \"생년월일 6자리\"\n- textbox \"주민등록번호 뒤 첫번째 자리\"\n- textbox \"휴대폰번호\"\n- button \"보안문자 새로고침\"\n- button \"보안문자 음성듣기\"\n- textbox \"보안문자 입력\"\n- button \"확인\"\n- link \"이용약관\"\n- link \"개인정보처리방침\"\n- link \"도입문의\"",
+    "playwrightCoreVersion": "1.59.1",
+    "origin": "explore",
+    "confirmedRuns": 1,
+    "kind": "act",
+    "expect": {
+      "url": "^https://nice\\.checkplus\\.co\\.kr/cert/mobileCert/sms/confirm"
+    },
+    "method": "click",
+    "target": {
+      "selectors": [
+        "internal:role=button[name=\"확인\"i]",
+        "#btnSubmit",
+        "internal:role=button >> nth=3"
+      ]
+    }
+  },
+  {
+    "id": "7be764de-199b-4a95-b937-a11448f207bb",
+    "intent": "주민등록번호 뒤 첫번째 자리 입력란",
+    "urlPattern": "nice.checkplus.co.kr/cert-mobileCert-sms-certification",
+    "boundAt": "2026-09-22T09:03:29.337Z",
+    "fingerprint": "- button \"닫기\"\n- textbox \"이름\"\n- textbox \"생년월일 6자리\"\n- textbox \"주민등록번호 뒤 첫번째 자리\"\n- link \"이용약관\"\n- link \"개인정보처리방침\"\n- link \"도입문의\"",
+    "playwrightCoreVersion": "1.59.1",
+    "origin": "explore",
+    "confirmedRuns": 3,
+    "kind": "act",
+    "expect": {
+      "filled": true
+    },
+    "method": "fill",
+    "target": {
+      "selectors": [
+        "internal:role=textbox[name=\"주민등록번호 뒤 첫번째 자리\"i]",
+        "internal:label=\"주민등록번호 뒤 첫번째 자리\"i"
+      ]
+    }
+  },
+  {
+    "id": "cf9de3df-43b2-4fd8-b0be-c862ec3336dc",
+    "intent": "확인 버튼",
+    "urlPattern": "nice.checkplus.co.kr/cert-mobileCert-sms-certification",
+    "boundAt": "2026-09-22T09:02:43.671Z",
+    "fingerprint": "- button \"닫기\"\n- textbox \"이름\"\n- button \"확인\"\n- link \"이용약관\"\n- link \"개인정보처리방침\"\n- link \"도입문의\"",
+    "playwrightCoreVersion": "1.59.1",
+    "origin": "explore",
+    "confirmedRuns": 3,
+    "kind": "act",
+    "expect": {
+      "gone": true,
+      "rendered": [
+        "- textbox \"생년월일 6자리\"",
+        "- textbox \"주민등록번호 뒤 첫번째 자리\""
+      ]
+    },
+    "method": "click",
+    "target": {
+      "selectors": [
+        "internal:role=button[name=\"확인\"i]",
+        "#btnSubmit",
+        "form[name=\"frm\"] >> internal:role=button"
+      ]
+    }
+  },
+  {
+    "id": "9aa75c8f-64d7-469f-8b81-28aeba53aad3",
+    "intent": "휴대폰번호 입력란",
+    "urlPattern": "nice.checkplus.co.kr/cert-mobileCert-sms-certification",
+    "boundAt": "2026-09-22T09:04:11.649Z",
+    "fingerprint": "- button \"닫기\"\n- textbox \"이름\"\n- textbox \"생년월일 6자리\"\n- textbox \"주민등록번호 뒤 첫번째 자리\"\n- textbox \"휴대폰번호\"\n- link \"이용약관\"\n- link \"개인정보처리방침\"\n- link \"도입문의\"",
+    "playwrightCoreVersion": "1.59.1",
+    "origin": "explore",
+    "confirmedRuns": 2,
+    "kind": "act",
+    "expect": {
+      "filled": true
+    },
+    "method": "fill",
+    "target": {
+      "selectors": [
+        "internal:role=textbox[name=\"휴대폰번호\"i]",
+        "internal:attr=[placeholder=\"휴대폰번호\"i]"
+      ]
+    }
+  },
+  {
+    "id": "5bfdb850-7074-4ea3-93db-4db6108b0c8b",
+    "intent": "인증번호 입력란",
+    "urlPattern": "nice.checkplus.co.kr/cert-mobileCert-sms-confirm",
+    "boundAt": "2026-09-22T09:08:09.896Z",
+    "fingerprint": "- button \"닫기\"\n- textbox \"인증번호\"\n- button \"확인\"\n- button \"시간연장\"\n- link \"손쉬운 발급,3년 사용 안전하고 간편한 PASS인증서 PASS인증서\"\n- link \"이용약관\"\n- link \"개인정보처리방침\"\n- link \"도입문의\"",
+    "playwrightCoreVersion": "1.59.1",
+    "origin": "explore",
+    "confirmedRuns": 1,
+    "kind": "act",
+    "expect": {
+      "filled": true
+    },
+    "method": "fill",
+    "target": {
+      "selectors": [
+        "internal:role=textbox[name=\"인증번호\"i]",
+        "internal:attr=[placeholder=\"인증번호\"i]"
+      ]
+    }
+  },
+  {
+    "id": "10bc22ab-d8a9-4afb-b4a2-a5814e0b4049",
+    "intent": "공동인증서 인증 버튼을 누른다",
+    "urlPattern": "www.4insure.or.kr/pbiz-mjon-processMbrCertLgnView.do",
+    "boundAt": "2026-10-02T16:24:40.949Z",
+    "fingerprint": "- button \"본문 바로가기\"\n- button \"메뉴 바로가기\"\n- link \"4대사회보험정보연계센터 자세히보기\"\n- button \"닫기\"\n- link \"English\"\n- link \"로그아웃\"\n- link \"마이페이지\"\n- link \"원격지원\"\n- link \"사이트맵\"\n- button\n- textbox \"통합 검색어 입력 영역\"\n- button \"통합검색\"\n- link \"신고·신청\"\n- link \"증명서발급\"\n- link \"자료실\"\n- link \"조회·찾기\"\n- link \"이용안내\"\n- link \"교육·소통\"\n- link \"센터·제도\"\n- link \"홈\"\n- link \"회원\"\n- button \"메뉴닫기\"\n- button \"가 화면확대\"\n- button \"가 화면축소\"\n- button \"관심목록에 추가\"\n- button \"공동인증서 인증\"\n- button \"금융인증서 인증\"\n- button \"브라우저 인증\"\n- link \"공동인증서 이용 도우미 바로가기\"\n- link \"금융인증서 이용 도우미 바로가기\"\n- link \"처리현황조회\"\n- link \"4대사회보험료 계산기\"\n- link \"챗봇상담\"\n- link \"위로 이동\"\n- combobox \"유관기관 사이트 선택\"\n  - option \"유관기관 사이트\" [selected]\n  - option \"사회보험통합징수포털\"\n  - option \"국민연금공단\"\n  - option \"국민건강보험공단\"\n  - option \"고용보험\"\n  - option \"근로복지공단\"\n  - option \"고용노동부\"\n  - option \"한국고용정보원\"\n  - option \"노인장기요양보험\"\n  - option \"보건복지부\"\n  - option \"건강iN\"\n  - option \"건강보험심사평가원\"\n  - option \"기초연금\"\n  - option \"정부24\"\n- button \"이동\"\n- link \"개인정보처리방침\"\n- link \"무단이메일수집거부\"\n- link \"정보공개제도\"\n- link \"이용약관\"\n- link \"도로명주소검색\"\n- link ×n",
+    "playwrightCoreVersion": "1.59.1",
+    "origin": "explore",
+    "confirmedRuns": 1,
+    "kind": "act",
+    "expect": {
+      "rendered": [
+        "- dialog",
+        "- dialog",
+        "- dialog",
+        "- button \"브라우저\"",
+        "- button \"인증서찾기\"",
+        "- button \"하드디스크\"",
+        "- combobox \"이동식디스크\"",
+        "- button \"스마트인증\" [disabled]",
+        "- button \"다음\"",
+        "- button \"인증서 보기\"",
+        "- button \"인증서 삭제\"",
+        "- button \"인증서 복사\"",
+        "- textbox \"인증서 암호 인증서 암호 인증서 암호\"",
+        "- button \"확인\"",
+        "- button \"취소\""
+      ]
+    },
+    "method": "click",
+    "target": {
+      "selectors": [
+        "internal:role=button[name=\"공동인증서 인증\"i]"
+      ]
+    }
+  },
+  {
+    "id": "ee2b92a6-7354-4158-a007-8508352db23c",
+    "intent": "인증서 암호 입력란",
+    "urlPattern": "www.4insure.or.kr/pbiz-mjon-processMbrCertLgnView.do",
+    "boundAt": "2026-10-02T16:26:06.803Z",
+    "fingerprint": "- button \"본문 바로가기\"\n- button \"메뉴 바로가기\"\n- link \"4대사회보험정보연계센터 자세히보기\"\n- button \"닫기\"\n- link \"English\"\n- link \"로그아웃\"\n- link \"마이페이지\"\n- link \"원격지원\"\n- link \"사이트맵\"\n- button\n- textbox \"통합 검색어 입력 영역\"\n- button \"통합검색\"\n- link \"신고·신청\"\n- link \"증명서발급\"\n- link \"자료실\"\n- link \"조회·찾기\"\n- link \"이용안내\"\n- link \"교육·소통\"\n- link \"센터·제도\"\n- link \"홈\"\n- link \"회원\"\n- button \"메뉴닫기\"\n- button \"가 화면확대\"\n- button \"가 화면축소\"\n- button \"관심목록에 추가\"\n- button \"공동인증서 인증\"\n- button \"금융인증서 인증\"\n- button \"브라우저 인증\"\n- link \"공동인증서 이용 도우미 바로가기\"\n- link \"금융인증서 이용 도우미 바로가기\"\n- link \"처리현황조회\"\n- link \"4대사회보험료 계산기\"\n- link \"챗봇상담\"\n- link \"위로 이동\"\n- combobox \"유관기관 사이트 선택\"\n  - option \"유관기관 사이트\" [selected]\n  - option \"사회보험통합징수포털\"\n  - option \"국민연금공단\"\n  - option \"국민건강보험공단\"\n  - option \"고용보험\"\n  - option \"근로복지공단\"\n  - option \"고용노동부\"\n  - option \"한국고용정보원\"\n  - option \"노인장기요양보험\"\n  - option \"보건복지부\"\n  - option \"건강iN\"\n  - option \"건강보험심사평가원\"\n  - option \"기초연금\"\n  - option \"정부24\"\n- button \"이동\"\n- link \"개인정보처리방침\"\n- link \"무단이메일수집거부\"\n- link \"정보공개제도\"\n- link \"이용약관\"\n- link \"도로명주소검색\"\n- link ×n\n- dialog\n  - dialog\n    - dialog\n      - button \"브라우저\"\n      - button \"인증서찾기\"\n      - button \"하드디스크\"\n      - combobox \"이동식디스크\"\n      - button \"스마트인증\" [disabled]\n      - button \"다음\"\n      - button \"인증서 보기\"\n      - button \"인증서 삭제\"\n      - button \"인증서 복사\"\n      - textbox \"인증서 암호 인증서 암호 인증서 암호\"\n      - button \"확인\"\n      - button \"취소\"",
+    "playwrightCoreVersion": "1.59.1",
+    "origin": "explore",
+    "confirmedRuns": 1,
+    "kind": "act",
+    "expect": {
+      "filled": true
+    },
+    "method": "fill",
+    "target": {
+      "selectors": [
+        "internal:role=textbox[name=\"인증서 암호 인증서 암호 인증서 암호\"i]",
+        "#xwup_certselect_lite_input1",
+        "input[name=\"certselect_lite_input1\"]"
+      ]
+    }
+  },
+  {
+    "id": "58c2944d-71d8-48a9-a816-eaec46919845",
+    "intent": "인증서 창의 확인 버튼을 누른다",
+    "urlPattern": "www.4insure.or.kr/pbiz-mjon-processMbrCertLgnView.do",
+    "boundAt": "2026-10-02T16:26:07.561Z",
+    "fingerprint": "- button \"본문 바로가기\"\n- button \"메뉴 바로가기\"\n- link \"4대사회보험정보연계센터 자세히보기\"\n- button \"닫기\"\n- link \"English\"\n- link \"로그아웃\"\n- link \"마이페이지\"\n- link \"원격지원\"\n- link \"사이트맵\"\n- button\n- textbox \"통합 검색어 입력 영역\"\n- button \"통합검색\"\n- link \"신고·신청\"\n- link \"증명서발급\"\n- link \"자료실\"\n- link \"조회·찾기\"\n- link \"이용안내\"\n- link \"교육·소통\"\n- link \"센터·제도\"\n- link \"홈\"\n- link \"회원\"\n- button \"메뉴닫기\"\n- button \"가 화면확대\"\n- button \"가 화면축소\"\n- button \"관심목록에 추가\"\n- button \"공동인증서 인증\"\n- button \"금융인증서 인증\"\n- button \"브라우저 인증\"\n- link \"공동인증서 이용 도우미 바로가기\"\n- link \"금융인증서 이용 도우미 바로가기\"\n- link \"처리현황조회\"\n- link \"4대사회보험료 계산기\"\n- link \"챗봇상담\"\n- link \"위로 이동\"\n- combobox \"유관기관 사이트 선택\"\n  - option \"유관기관 사이트\" [selected]\n  - option \"사회보험통합징수포털\"\n  - option \"국민연금공단\"\n  - option \"국민건강보험공단\"\n  - option \"고용보험\"\n  - option \"근로복지공단\"\n  - option \"고용노동부\"\n  - option \"한국고용정보원\"\n  - option \"노인장기요양보험\"\n  - option \"보건복지부\"\n  - option \"건강iN\"\n  - option \"건강보험심사평가원\"\n  - option \"기초연금\"\n  - option \"정부24\"\n- button \"이동\"\n- link \"개인정보처리방침\"\n- link \"무단이메일수집거부\"\n- link \"정보공개제도\"\n- link \"이용약관\"\n- link \"도로명주소검색\"\n- link ×n\n- dialog\n  - dialog\n    - dialog\n      - button \"브라우저\"\n      - button \"인증서찾기\"\n      - button \"하드디스크\"\n      - combobox \"이동식디스크\"\n      - button \"스마트인증\" [disabled]\n      - button \"다음\"\n      - button \"인증서 보기\"\n      - button \"인증서 삭제\"\n      - button \"인증서 복사\"\n      - textbox \"인증서 암호 인증서 암호 인증서 암호\"\n      - button \"확인\"\n      - button \"취소\"",
+    "playwrightCoreVersion": "1.59.1",
+    "origin": "explore",
+    "confirmedRuns": 1,
+    "kind": "act",
+    "expect": {
+      "gone": true,
+      "url": "^https://www\\.4insure\\.or\\.kr/"
+    },
+    "method": "click",
+    "target": {
+      "selectors": [
+        "internal:role=button[name=\"확인\"i]",
+        "#xwup_OkButton"
+      ]
+    }
+  }
+]

@@ -1,1 +1,330 @@
-[]
+[
+  {
+    "id": "db26d411-94bb-59f4-a4b8-6b281d282e7c",
+    "urlPattern": "claude.ai",
+    "kind": "trap",
+    "text": "공유 대화 /share/{uuid} 는 claude.ai 에 로그인했을 때만 대화 내용을 그린다. 내용 없이 앱 껍데기만 보이면 로그아웃 상태다. 대화 제목은 문서 제목(항상 Claude)이 아니라 page header 첫 줄이다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/claude-ai/share-export.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.034Z"
+  },
+  {
+    "id": "c6d6e0b3-6987-58c3-b5d5-a72921f26979",
+    "urlPattern": "claude.ai",
+    "kind": "trap",
+    "text": "응답마다 화면에 안 보이는 'Claude responded:' 제목이, 사용자 턴마다 'You said: 미리보기' 제목이 붙는다. 대화를 옮길 때는 이 제목을 빼고 본문만 읽는다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/claude-ai/share-export.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.035Z"
+  },
+  {
+    "id": "9ac3483c-5349-53cf-ba93-178975e76d92",
+    "urlPattern": "github.com",
+    "kind": "trap",
+    "text": "Star·Watch 와 같은 이름의 버튼이 둘 잡힌다. 먼저 나오는 것은 sticky 헤더 안의 크기 0 숨은 버튼이라 눌러도 아무 일이 없다. 화면에 보이는 버튼을 고른다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/github/repo-actions.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.000Z"
+  },
+  {
+    "id": "4efce2e6-0fcf-5692-a64e-e8f241742eaf",
+    "urlPattern": "github.com",
+    "kind": "mechanic",
+    "text": "Star 성공은 버튼 안 숫자가 아니라 버튼 이름이 Unstar/Starred 로 바뀌었는지로 확인한다. 숫자는 한 박자 늦게 바뀐다. 이름이 그대로면 누름이 반영되지 않은 것이다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/github/repo-actions.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.001Z"
+  },
+  {
+    "id": "c1904e52-cca8-590a-aab0-1320094b3c20",
+    "urlPattern": "github.com",
+    "kind": "trap",
+    "text": "로그인하지 않은 상태에서는 Star·Watch 폼이 렌더링되지 않는다. 버튼이 안 보이면 로그인 여부부터 확인한다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/github/repo-actions.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.002Z"
+  },
+  {
+    "id": "9a827b2e-d3a5-5a91-b702-84e04176c978",
+    "urlPattern": "github.com",
+    "kind": "data-access",
+    "text": "저장소 정보(star 수, 설명, 언어, 기본 브랜치)를 읽기만 할 때는 화면 대신 https://api.github.com/repos/{owner}/{repo} 를 연다. 파일 원문은 https://raw.githubusercontent.com/{owner}/{repo}/{branch}/{path}. 비로그인 API 한도는 IP 당 시간당 60회다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/github/scraping.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.003Z"
+  },
+  {
+    "id": "524bea67-397e-5cb0-9e96-158a376509af",
+    "urlPattern": "github.com",
+    "kind": "navigation",
+    "text": "트렌딩은 /trending, 언어별 /trending/{language}, 기간은 ?since=weekly 또는 ?since=monthly. 저장소 카드는 load 후 약 2초 뒤에 그려진다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/github/scraping.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.004Z"
+  },
+  {
+    "id": "9a376c25-5287-50ce-b393-042c1205bb8e",
+    "urlPattern": "mail.google.com",
+    "kind": "trap",
+    "text": "편지쓰기의 받는사람 칸에서 Tab 은 다음 칸으로 가지 않고 탭 문자를 입력한다. 제목·본문 칸은 직접 클릭해 옮긴다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/gmail/compose.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.014Z"
+  },
+  {
+    "id": "465dbf7d-6ecb-5841-bc0e-13d46553c8a3",
+    "urlPattern": "mail.google.com",
+    "kind": "trap",
+    "text": "최소화된 임시저장 편지쓰기 창도 dialog 로 남아 있어 같은 이름의 칸·버튼·첨부 file input 이 창마다 하나씩 잡힌다. 첫 번째는 최소화된 창의 것일 수 있으니 펼쳐진 편지쓰기 창 안의 요소를 고른다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/gmail/compose.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.015Z"
+  },
+  {
+    "id": "b656a665-f292-55fc-8b6b-346be32123a8",
+    "urlPattern": "mail.google.com",
+    "kind": "mechanic",
+    "text": "받는사람은 칸을 벗어나면 chip 으로 바뀌므로 입력값이 아니라 chip 으로 확인한다. 첨부는 '파일명 (크기)' chip 이 뜨면 들어간 것이고, 넣은 직후 file input 이 비는 것은 실패가 아니다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/gmail/compose.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.016Z"
+  },
+  {
+    "id": "f1a8a196-6b02-56d4-944d-b61caeae23fb",
+    "urlPattern": "mail.google.com",
+    "kind": "mechanic",
+    "text": "단축키 c 는 계정에서 키보드 단축키가 켜져 있을 때만 편지쓰기를 연다. 반응이 없으면 왼쪽 편지쓰기 버튼을 누른다. 보낸 뒤에는 왼쪽 아래 '메일을 보냈습니다'(Message sent) 알림으로 확인한다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/gmail/compose.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.017Z"
+  },
+  {
+    "id": "5f10f96b-b8ff-5725-b45a-ba89ce8326a6",
+    "urlPattern": "medium.com",
+    "kind": "trap",
+    "text": "글 맨 위의 '숫자 숫자 Listen Share More' 줄은 박수·댓글·듣기·공유 버튼이지 본문이 아니다. 글 제목은 문서 제목이 아니라 글의 h1 에서 읽는다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/medium/article-hydration.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.032Z"
+  },
+  {
+    "id": "1b1ac0f2-d702-5736-a275-8847c61649e4",
+    "urlPattern": "medium.com",
+    "kind": "mechanic",
+    "text": "load 뒤에도 약 2초간 본문 앞부분이 skeleton 이다. 회원 전용 글이 500자 미만으로 끝나면 paywall 이 가로챈 것이니 로그인 상태를 확인한다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/medium/article-hydration.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.033Z"
+  },
+  {
+    "id": "f4238b61-f6c3-55ff-ae96-81df9ac9283b",
+    "urlPattern": "stackoverflow.com",
+    "kind": "data-access",
+    "text": "질문·답변을 읽기만 할 때는 https://api.stackexchange.com/2.3/questions/{id}/answers?site=stackoverflow&filter=withbody 처럼 API 를 연다. filter=withbody 가 없으면 본문이 오류 없이 빠진다. 여러 id 는 쉼표가 아니라 세미콜론으로 잇는다. 비로그인 한도는 IP 당 하루 300회다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/stackoverflow/scraping.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.031Z"
+  },
+  {
+    "id": "bddaac87-0ea9-5f5d-bb70-360d41a54137",
+    "urlPattern": "vercel.com",
+    "kind": "navigation",
+    "text": "/dashboard 는 항상 /{team-slug} 로 redirect 된다. 배포 목록은 /{team-slug}/{project}/deployments, 배포 상세는 /{team-slug}/{project}/{uid}. URL 의 uid 는 API uid 에서 dpl_ 접두어만 뗀 전체 문자열이고 breadcrumb 에 보이는 잘린 형태가 아니다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/vercel/vercel.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.005Z"
+  },
+  {
+    "id": "9cb5ec5e-8e3c-51ec-a1ef-9248a928af5b",
+    "urlPattern": "vercel.com",
+    "kind": "trap",
+    "text": "배포 상세의 Build Logs 는 virtual list 라 화면에 보이는 줄만 DOM 에 있다. 전체 로그는 로그인한 브라우저로 https://vercel.com/api/v3/deployments/{dpl_uid}/events?builds=1&limit=5000&teamId={team-slug} 를 연다. limit=-1 은 빈 결과다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/vercel/vercel.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.006Z"
+  },
+  {
+    "id": "77570904-73b4-5f2a-823a-078f9d8090c9",
+    "urlPattern": "vercel.com",
+    "kind": "trap",
+    "text": "배포의 Logs 탭(Runtime Logs)은 서버리스 요청 로그이지 빌드 출력이 아니다. 빌드 출력은 Deployment 탭의 Build Logs 다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/vercel/vercel.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.007Z"
+  },
+  {
+    "id": "6394cbea-30eb-5942-bbb4-12bfccaea4cc",
+    "urlPattern": "vercel.com",
+    "kind": "trap",
+    "text": "배포 목록 상태 필터는 기본으로 Canceled 를 뺀 6개 중 5개다. 취소된 배포를 찾으면 필터에서 Canceled 를 켠다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/vercel/vercel.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.008Z"
+  },
+  {
+    "id": "35b8e1d6-ed7f-5991-8c51-aa1166ed91f5",
+    "urlPattern": "vercel.com",
+    "kind": "trap",
+    "text": "미리보기 썸네일의 'Error: Forbidden' 은 배포 실패가 아니라 앱이 인증을 요구한다는 뜻이다. 프로젝트 카드의 ! 아이콘은 빌드 오류가 아니라 Speed Insights 성능 경고다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/vercel/vercel.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.009Z"
+  },
+  {
+    "id": "204d32fa-4549-50e1-a9c8-c98dbb97ea1a",
+    "urlPattern": "www.linkedin.com",
+    "kind": "navigation",
+    "text": "받은 초대는 /mynetwork/invitation-manager/received/ 이고, 공통 연결은 끝에 PEOPLE_WITH_MUTUAL_CONNECTION/, 같은 학교는 PEOPLE_WITH_MUTUAL_SCHOOL/ 를 붙인다. 필터 chip 의 (N) 이 남은 초대 수다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/linkedin/invitation-manager.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.023Z"
+  },
+  {
+    "id": "b3b351c7-e969-5ae5-8f0f-f3863a9faf33",
+    "urlPattern": "www.linkedin.com",
+    "kind": "trap",
+    "text": "'{이름} follows you and is inviting you to connect' 카드의 Accept 는 버튼이 아니라 현재 페이지를 가리키는 링크라 눌러도 수락되지 않는다. Ignore 를 누르거나 건너뛴다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/linkedin/invitation-manager.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.024Z"
+  },
+  {
+    "id": "a8ec49de-4389-5db4-82ba-b1af2f67d5ad",
+    "urlPattern": "www.linkedin.com",
+    "kind": "mechanic",
+    "text": "초대는 한 번에 약 10장만 보이고 처리한 뒤에도 다음 묶음이 나타나지 않으며 스크롤로도 안 불러온다. 필터 URL 을 다시 연다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/linkedin/invitation-manager.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.025Z"
+  },
+  {
+    "id": "f4124c07-be6c-57a2-bb60-eb39cc0d3674",
+    "urlPattern": "www.linkedin.com",
+    "kind": "trap",
+    "text": "수락 중 'Take care when connecting' 창이 가끔 끼어든다. 'Accept invite' 를 누르면 진행된다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/linkedin/invitation-manager.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.026Z"
+  },
+  {
+    "id": "c64fe0eb-2c8f-5a4d-848f-4eec7dbb9ea9",
+    "urlPattern": "www.linkedin.com",
+    "kind": "data-access",
+    "text": "외부 링크는 https://www.linkedin.com/redir/redirect?url={인코딩된 URL} 로 감싸져 있다. url 파라미터를 디코딩해 원래 주소를 직접 연다. 로그인 창이 화면을 가려도 공개 게시물 글과 링크는 페이지에 있다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/x/article-source-recovery.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.027Z"
+  },
+  {
+    "id": "a10a2642-65ec-5f75-8048-9bfa57cc1eea",
+    "urlPattern": "www.reddit.com",
+    "kind": "data-access",
+    "text": "공개 게시물은 URL 끝에 /.json 을 붙이면 글과 댓글이 JSON 으로 나온다. 정확한 점수(score)도 여기서 읽는다. 화면 점수는 1.2k 처럼 줄여 표시된다. 비공개·격리 서브레딧과 NSFW 는 로그인한 화면으로 본다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/reddit/scraping.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.028Z"
+  },
+  {
+    "id": "2dc2eefe-d19d-5ea9-a369-3f696c03e2ff",
+    "urlPattern": "www.reddit.com",
+    "kind": "mechanic",
+    "text": "댓글은 처음 보이는 것만 그려진다. 'more' 버튼보다 스크롤을 반복해 댓글 수가 더 늘지 않을 때까지 불러온다. 게시물 본문은 load 후 2~3초 뒤에 채워진다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/reddit/scraping.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.029Z"
+  },
+  {
+    "id": "a39f76ed-b0af-53a8-951e-5c88fdc706dd",
+    "urlPattern": "www.reddit.com",
+    "kind": "navigation",
+    "text": "공유 링크 /r/{sub}/s/{hash} 는 열면 정식 게시물 URL 로 redirect 되므로 저장·인용은 redirect 된 주소로 한다. old.reddit.com 은 같은 로그인으로 단순한 화면을 준다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/reddit/scraping.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.030Z"
+  },
+  {
+    "id": "5dfe8cb4-d427-58c4-965e-ab775ba0386a",
+    "urlPattern": "www.tiktok.com",
+    "kind": "navigation",
+    "text": "업로드는 https://www.tiktok.com/tiktokstudio/upload?from=upload&lang=en 이다. 성공하면 /tiktokstudio/content 로 이동한다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/tiktok/upload.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.036Z"
+  },
+  {
+    "id": "f535cb81-d496-5893-a4bf-9e58d6a39045",
+    "urlPattern": "www.tiktok.com",
+    "kind": "trap",
+    "text": "이전 업로드를 버리고 나갔으면 'A video you were editing wasn't saved' 배너가 뜬다. 배너의 Discard 를 누르고 확인 창의 빨간 Discard 를 한 번 더 누른다. 여러 개 쌓여 있으면 반복한다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/tiktok/upload.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.037Z"
+  },
+  {
+    "id": "fe09fc6f-a315-583d-b8d4-87e03537ed79",
+    "urlPattern": "www.tiktok.com",
+    "kind": "trap",
+    "text": "캡션은 파일명으로 미리 채워지고 입력은 그 뒤에 붙는다. 끝으로 가서 Backspace 로 지운 뒤 입력한다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/tiktok/upload.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.038Z"
+  },
+  {
+    "id": "6b901fe4-1e64-516a-a240-5f85cbda3658",
+    "urlPattern": "www.tiktok.com",
+    "kind": "mechanic",
+    "text": "예약 시간 선택기는 select 가 아니라 휠 스크롤 목록이다. 항목을 스크립트로 click 해도 바뀌지 않으니 좌표 클릭이나 목록 위 휠 스크롤로 한 칸씩 바꾼다. 'Show more' 를 펼치면 선택기가 화면 밖으로 밀리므로 시간을 정할 때는 접어 둔다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/tiktok/upload.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.039Z"
+  },
+  {
+    "id": "d2f53584-9b33-55e9-8006-2578dba96410",
+    "urlPattern": "www.tiktok.com",
+    "kind": "trap",
+    "text": "제출 버튼 이름은 Schedule 라디오를 고른 뒤에만 Schedule 이고 그 전에는 Post 다. AI-generated content 토글은 Show more 안에 있다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/tiktok/upload.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.040Z"
+  },
+  {
+    "id": "8cb8f98a-c0d9-529b-9da6-f98c1aec9549",
+    "urlPattern": "www.youtube.com",
+    "kind": "mechanic",
+    "text": "watch 페이지의 제목·채널명·조회수 영역은 load 후 2~3초 동안 비어 있다. load 직후 snapshot 에 없으면 기다렸다 다시 본다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/youtube/scraping.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.010Z"
+  },
+  {
+    "id": "22b1acfe-d5b0-5349-a868-170df2681754",
+    "urlPattern": "www.youtube.com",
+    "kind": "data-access",
+    "text": "공개 영상의 제목·채널만 필요하면 https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v={VIDEO_ID}&format=json 이 바로 JSON 을 준다. 연령 제한 영상은 401, 비공개·삭제 영상은 404 다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/youtube/scraping.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.011Z"
+  },
+  {
+    "id": "adcc0e9c-c260-5dad-8f92-a29d3cb178bf",
+    "urlPattern": "www.youtube.com",
+    "kind": "trap",
+    "text": "자막 텍스트는 페이지 데이터의 captionTracks URL 이 빈 응답을 준다. 영상 설명 아래 '스크립트 표시'(Show transcript) UI 로 연다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/youtube/scraping.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.012Z"
+  },
+  {
+    "id": "1b720032-8d2e-545d-8370-955645d274f9",
+    "urlPattern": "www.youtube.com",
+    "kind": "navigation",
+    "text": "영상 /watch?v={ID}, 짧은 링크 https://youtu.be/{ID}, Shorts /shorts/{ID}, 채널 /@{handle} 또는 /channel/{ID}, 재생목록 /playlist?list={ID}, 검색 /results?search_query={검색어}.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/youtube/scraping.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.013Z"
+  },
+  {
+    "id": "14785bf6-e008-5fef-bad7-f6243a22218b",
+    "urlPattern": "x.com",
+    "kind": "navigation",
+    "text": "로그인은 https://x.com/i/flow/login 으로 간다. 홈의 로그인 버튼 영역은 잘린 형태로 나올 수 있다. twitter.com 은 x.com 으로 redirect 된다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/x/posting.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.018Z"
+  },
+  {
+    "id": "5921cfeb-c095-5a0f-a553-5964ac2c65fd",
+    "urlPattern": "x.com",
+    "kind": "trap",
+    "text": "'Google 계정으로 로그인' 버튼은 FedCM 이라 CDP 로 보낸 클릭이 사용자 동작으로 인정되지 않는다. 사용자에게 직접 누르게 하고 확인을 받은 뒤 진행한다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/x/posting.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.019Z"
+  },
+  {
+    "id": "465914e5-7f70-5984-8e0d-2da2111828e3",
+    "urlPattern": "x.com",
+    "kind": "trap",
+    "text": "게시 버튼이 둘이다. 홈 피드 인라인 작성란의 Post 와 사이드바 Post 로 연 modal 의 Post. 지금 글을 쓴 작성란에 붙은 버튼을 누른다. 성공하면 'Your post was sent.' 알림이 뜬다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/x/posting.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.020Z"
+  },
+  {
+    "id": "22104d07-cb9a-5ee8-9be4-84b9f8617ef0",
+    "urlPattern": "x.com",
+    "kind": "trap",
+    "text": "Grok 패널이 갑자기 열리면 왼쪽 사이드바 같은 빈 곳을 눌러 닫은 뒤 작성란을 다룬다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/x/posting.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.021Z"
+  },
+  {
+    "id": "40051668-5d5a-5e33-885d-3098b00789b1",
+    "urlPattern": "x.com",
+    "kind": "trap",
+    "text": "공개 게시물에 붙은 Article 카드(/i/article/{id})는 로그인하지 않은 상태에서 로그인 화면으로 redirect 된다. 게시물이 비공개이거나 삭제됐다는 뜻이 아니다.",
+    "source": "browser-harness@afbcc38 agent-workspace/domain-skills/x/article-source-recovery.md (MIT, Copyright (c) 2026 Browser Use)",
+    "recordedAt": "2026-10-10T00:00:00.022Z"
+  }
+]
